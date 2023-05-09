@@ -1,13 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FTN75__W';
+  src: local('FTN75__W'), url(./fonts/FTN75__W.woff2) format('woff');
+}
+
+@font-face {
+  font-family: 'FTN45__W';
+  src: local('FTN45__W'), url(./fonts/FTN45__W.woff2) format('woff');
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'FTN45__W', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+b, h1, h2 {
+    font-family: 'FTN45__W';
+  font-weight: bold;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.size-guide-wrapper {
+background-color: #eee;
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: .4px;
+    line-height: 1.57;
+    padding: 11px 10px 15px;
+}
+
+.camera {
+  width: 240px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.camera-body {
+  width: 340px;
+  height: 500px;
+  border-radius: 50%;
 }
